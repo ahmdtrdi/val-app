@@ -1,0 +1,109 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+::content {
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --prirmary-color: #c8dffc;
+    --secondary-color: #ffffff ;
+    --color-text: #0a457b;
+    --envelope-tab: #ecdeb8;
+    --envelope-cover: #e6cfa7;
+    --shadow-color: rgba(0, 0, 0, 0.2);
+    --txt-color: #444;
+    --heart-color: rgb(252, 8, 231);
+}
+
+header{
+    background-color: #c8dffc;
+    width: 100%;
+    min-height: 1000px;
+    margin: 0%;
+    outline: none;
+}
+
+.home {
+    position: relative;
+    justify-content: center;
+    background: #ffffff;
+}
+
+container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-yes {
+   width: 20%;
+   height: 40px;
+   border-radius: 30px;
+   border: none;
+   background: #0a457b;
+   color: #ffffff;
+}
+
+.btn-no {
+    position: absolute;
+    width: 20%;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid #0a457b;
+    background: #ffffff;
+    color: #0a457b;
+ }
+
+ button:nth-child(1){
+    margin-right: 300px;
+ }
+
+ button:nth-child(2){
+    margin-left: 300px;
+ }
+
+ .falling-cat {
+    position: absolute;
+    width: 50px; /* Adjust the width of the falling cats */
+    animation: falling 3s linear; /* Set the animation duration to 3 seconds */
+  }
+  
+  @keyframes falling {
+    0% {
+      opacity: 0;
+      transform: translateY(-50vh) translateX(-50%); /* Move the cats to the top center */
+    }
+    20% {
+      opacity: 1;
+      transform: translateY(20vh) translateX(-50%); /* Move the cats more towards the center */
+    }
+    80% {
+      opacity: 1;
+      transform: translateY(80vh) translateX(-50%); /* Move the cats more towards the center */
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(150vh) translateX(-50%); /* Move the cats to the bottom center */
+    }
+  }
+
+  .btn-uwu {
+    position: center;
+    width: 20%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background: #0a457b;
+    color: #ffffff;
+ }
+
+ .end {
+    padding : 70px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+ }
+ 
